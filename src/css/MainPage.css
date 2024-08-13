@@ -1,0 +1,50 @@
+/* Main Page */
+/* Container for the entire page */
+.main-container {
+    display: flex; /* Use Flexbox for layout */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .left-section, .right-section {
+    flex: 1; /* Each section takes up half the width of the container */
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%; /* Full width of the section */
+    height: 100%; /* Full height of the section */
+    overflow: hidden; /* Ensure no part of the image overflows its container */
+  }
+  
+  .image-container img {
+    width: 100%; /* Make image take the full width of the container */
+    height: 100%; /* Make image take the full height of the container */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    transition: opacity 0.3s ease, filter 0.3s ease; /* Smooth transitions */
+  }
+  
+  .image-container:hover img {
+    filter: saturate(60%); /* Remove color saturation */
+    opacity: 0.7; /* Make the image semi-transparent */
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .image-container:hover .text-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  }

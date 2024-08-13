@@ -1,0 +1,118 @@
+/* employee-handler.css */
+
+/* General styling for the Employee Handler component */
+.employee-handler {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Styling for the Go Back button */
+.go-back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Styling for the employee list */
+.employee-list {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.employee-list h1 {
+  margin-bottom: 20px;
+}
+
+.employee-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employee-list li {
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 10px;
+}
+
+.employee-list li:last-child {
+  border-bottom: none;
+}
+
+.employee-list h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.employee-list p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Styling for the employee form */
+.employee-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.employee-form h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.employee-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.employee-form input[type="text"],
+.employee-form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.employee-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.employee-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading message styling */
+.loading-message {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}

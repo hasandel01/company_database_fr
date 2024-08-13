@@ -1,0 +1,79 @@
+/*
+  ProductHandler
+*/
+
+/* General container styling */
+.product-handler {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+  }
+  
+  /* Container for the product list */
+  .product-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .product-list h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  /* List styling */
+  .product-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Individual product item styling */
+  .product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  
+  .product-item:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Product details styling */
+  .product-item h2 {
+    font-size: 20px;
+    color: #0056b3; /* Slightly darker blue */
+  }
+  
+  .product-item p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .product-item .note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007bff; /* Blue color for links */
+  }
+  
+  .product-item a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .product-item a:hover {
+    text-decoration: underline;
+  }
+  

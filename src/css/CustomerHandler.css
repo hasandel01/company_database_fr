@@ -1,0 +1,49 @@
+
+
+.container {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 20px; /* Adjust gap between sections if needed */
+  }
+  
+  .details {
+    flex: 1; /* Take up available space on the left */
+    margin-right: 10px; /* Reduce space between customer details and orders */
+  }
+  
+  .icon-container {
+    padding: 10px;
+    border: 5px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #fff;
+  }
+  
+  .icon {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .c-orders {
+    flex: 0 0 300px; /* Fixed width for orders section */
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+  }

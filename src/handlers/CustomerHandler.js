@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axiosInstance from "../axios/axios";
+import '../css/CustomerHandler.css';
 
 const CustomerHandler = () => {
     const { id } = useParams();
@@ -37,10 +38,11 @@ const CustomerHandler = () => {
     }
 
     return (
-        <div className="container">
+        <div>
             <button onClick={ () => navigate(-1)} className="go-back-button">
                 Go Back 
             </button>
+        <div className="container">
             <div className="icon-container">
                 <img className="icon" src="/customer.jpg" alt="Customer" width={250} />
                 <div className="details">
@@ -67,6 +69,7 @@ const CustomerHandler = () => {
                     </ul>
                 )}
             </div>
+        </div>
         </div>
         
     );
